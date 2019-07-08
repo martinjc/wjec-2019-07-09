@@ -13,13 +13,13 @@
             rel="stylesheet"
             href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css"
         />
-        <link rel="stylesheet" href="../../reveal/css/reveal.css" />
+        <link rel="stylesheet" href="reveal/css/reveal.css" />
 
         <!-- My CSS Overrides -->
-        <link rel="stylesheet" href="../../css/slide_style.css" />
+        <link rel="stylesheet" href="css/slide_style.css" />
 
         <!-- Theme used for syntax highlighting of code -->
-        <link rel="stylesheet" href="../../reveal/lib/css/zenburn.css" />
+        <link rel="stylesheet" href="reveal/lib/css/zenburn.css" />
 
         <!-- Printing and PDF exports -->
         <script>
@@ -27,8 +27,8 @@
             link.rel = "stylesheet";
             link.type = "text/css";
             link.href = window.location.search.match(/print-pdf/gi)
-                ? "../../reveal/css/print/pdf.css"
-                : "../../reveal/css/print/paper.css";
+                ? "reveal/css/print/pdf.css"
+                : "reveal/css/print/paper.css";
             document.getElementsByTagName("head")[0].appendChild(link);
         </script>
     </head>
@@ -312,22 +312,35 @@
                 <section>
                     <h1>Bridging the Skills Gap: Innovation in Journalism Education</h1>
                     <br />
-                    <h3>Martin J Chorley &amp; Glyn Mottershead</h3>
-                    <br />
-                    <h4>
-                        Cardiff University &amp; City, University of London
-                    </h4>
+                    <table>
+                        <tr>
+                            <td>Martin J Chorley</td>
+                            <td>&nbsp;</td>
+                            <td style="text-align:right">Glyn Mottershead</td>
+                        </tr>
+                        <tr>
+                            <td>Cardiff University</td>
+                            <td>&nbsp;</td>
+                            <td style="text-align:right">City, University of London</td>
+                        </tr>
+                        <tr>
+                            <td>@martinjc</td>
+                            <td>&nbsp;</td>
+                            <td style="text-align:right">@glynmottershead</td>
+                        </tr>
+                    </table>
+
                     <br />
                     <footer>
                         <h4>2019-07-09 - WJEC</h4>
-                        <small>Link to slides</small>
+                        <small>slides: https://martinjc.github.io/wjec-2019-08-08/</small>
                     </footer>
                 </section>
             </div>
         </div>
 
-        <script src="../../reveal/lib/js/head.min.js"></script>
-        <script src="../../reveal/js/reveal.js"></script>
+        <script src="reveal/lib/js/head.min.js"></script>
+        <script src="reveal/js/reveal.js"></script>
 
         <script>
             // More info about config & dependencies:
@@ -344,11 +357,11 @@
                 transition: "none",
 
                 dependencies: [
-                    { src: "../../reveal/plugin/markdown/marked.js" },
-                    { src: "../../reveal/plugin/markdown/markdown.js" },
-                    { src: "../../reveal/plugin/notes/notes.js", async: true },
+                    { src: "reveal/plugin/markdown/marked.js" },
+                    { src: "reveal/plugin/markdown/markdown.js" },
+                    { src: "reveal/plugin/notes/notes.js", async: true },
                     {
-                        src: "../../reveal/plugin/highlight/highlight.js",
+                        src: "reveal/plugin/highlight/highlight.js",
                         async: true,
                         callback: function() {
                             hljs.initHighlightingOnLoad();
